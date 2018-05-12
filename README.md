@@ -12,8 +12,29 @@ npm install -s fractional.js
 
 Or, if you plan to use it in the browser, you can use a cdn:
 
-```
+```html
 <script src="https://unpkg.com/fractional.js"></script>
+```
+
+## Examples
+
+```js
+let pi = new Fractional(22,7)   // -> {n:22, d:7}
+new Fractional(22/7)            // -> {n:22, d:7}
+new Fractional([22,7])          // -> {n:22, d:7}
+
+pi.sub(3)                       // -> {n:1, d:7}
+pi.sub(new Fractional(1,3))     // -> {n:59, d:21}
+pi.mul(2)                       // -> {n:44, d:7}
+pi.pow(3)                       // -> {n:10648, d:343}
+pi.mul(2).sub(3/4)              // -> {n:155, d:28}
+
+pi.toString()                   // -> 22/7
+pi.valueOf()                    // -> 3.14285714285714
+
+1/10 + 2/10                     // -> 0.30000000000000004
+new F(1/10).add(2/10).valueOf() // -> 0.3
+new F(1/10 + 2/10)              // -> 0.3
 ```
 
 ## Docs
