@@ -1,5 +1,5 @@
 const T = require('./test.js');
-const F = require('../fraction.js');
+const F = require('../fractional.js');
 
 const S = new Date().getTime()
 
