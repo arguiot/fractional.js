@@ -25,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/lucasgruwez/fractional.js/issues"
   },
-  "homepage": "https://github.com/lucasgruwez/fractional.js#readme"
+  "homepage": "https://github.com/lucasgruwez/fractional.js#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
 }

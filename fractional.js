@@ -42,6 +42,9 @@ class Fraction {
 				else throw err.invalidParam
 
 			case 'number':
+				if (Number.isInteger(a)) {
+					return new Fraction(a, 1)
+				}
 				// approximate using Farey sequence
 				const N = 1E8
 
