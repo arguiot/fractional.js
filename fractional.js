@@ -42,7 +42,7 @@ class Fraction {
 				else throw err.invalidParam
 
 			case 'number':
-				if (Number.isInteger(a)) {
+				if (a % 1 == 0) {
 					return new Fraction(a, 1)
 				}
 				// approximate using Farey sequence
